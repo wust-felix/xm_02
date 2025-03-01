@@ -12,8 +12,4 @@ new Vue({
   el: '#app',
   render: (h) => h(App),
   store,
-  beforeCreate() {
-    //安装全局事件总线，$bus就是当前应用的vm
-    Vue.prototype.$bus = this;
-  },
 });
